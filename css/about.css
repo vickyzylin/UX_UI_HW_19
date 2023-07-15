@@ -1,0 +1,275 @@
+.nav {
+    background-color: #FDFAF5;
+    overflow:hidden;
+}
+.nav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 10px;
+}
+.nav a:hover {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: underline;
+    font-size: 17px;
+}
+.nav a.active {
+    font-weight: bold;
+    color: #C36E49;
+}
+.nav img {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.split {
+    height: 450px;
+    z-index: 1;
+    top: 14px;
+    overflow-x: hidden;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+.left {
+    width: 60%;
+    float: left;
+    left: 0;
+    background: #FDFAF5;
+}
+.right {
+    width: 40%;
+    float: right;
+    right: 0;
+    background: #FDFAF5;
+}
+button {
+    width: 40px 60px;
+    background-color: #EFCDC8;
+    padding: 20px;
+    border: none;
+    text-align: center;
+    border-radius: 40px;
+    padding-left: 20px;
+    font-family: 'epilogue';
+    font-size: 18px;
+}
+button:hover {
+    background-color: #C36E49;
+    color: white;
+}
+.footer a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 10px;
+}
+.footer a:hover {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: underline;
+    font-size: 17px;
+}
+footer {
+    margin-top: 200px;
+}
+p {
+    padding-left: 20px;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    font-family: 'epilogue';
+}
+h2 {
+    padding-left: 20px;
+    font-family: 'socheerful';
+    font-size:30px;
+}
+h1 {
+    padding-left: 20px;
+    font-family: 'socheerful';
+    font-size:150px;
+}
+.nav, .footer {
+    font-family: 'epilogue';
+}
+h4 {
+    padding-left: 20px;
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    font-family: 'epilogue';
+    font-weight: bold;
+}
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.flexChild {
+    width: calc(33.33% - 20px); 
+    margin-left: 10px;
+    height: auto;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #C36E49;
+}
+.flexChild:hover {
+    background-color: #EFCDC8;
+}
+.flexChild:hover p {
+    color: black;
+    font-size: 16px;
+}
+.flexChild p {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+.flexChild:hover h4 {
+    color: black;
+}
+.flexChild img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+h3 {
+    padding-left: 20px;
+    font-family: 'epilogue';
+    font-size: 85px;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    .flexContainer {
+      flex-direction: column;
+    }
+    .flexChild {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+    .mySkills {
+      grid-template-areas:
+        "UX Design"
+        "Visual Design"
+        "Programming";
+      grid-template-rows: auto auto auto;
+      grid-template-columns: 1fr;
+    }
+    .split {
+        width: 100%;
+        float: none;
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
+
+/* .accordion-header {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+.accordion-header p {
+    align-items: left;
+    color: black;
+    font-weight: bold;
+}
+.accordion-header:hover p {
+    font-weight: bold;
+    color: #C36E49;
+}
+.accordion-header h5 {
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.accordion-header:hover h5 {
+    font-weight: bold;
+    color: #C36E49;
+}
+.accordion {
+    margin-bottom: 250px;
+    padding-bottom: 100px;
+} */
+
+.accordion-header {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin: 10px;
+    background-color: white;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    padding-right: 20px;
+}  
+
+.accordion-header:hover {
+    background-color: #C36E49;
+}  
+
+.accordion-header p {
+    align-items: left;
+    color: black;
+    font-weight: bold;
+}  
+
+.accordion-header:hover p {
+    font-weight: bold;
+    color: white;
+}  
+
+.accordion-header h5 {
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.accordion-header:hover h5 {
+    font-weight: bold;
+    color: white;
+} 
+.accordion {
+    margin-bottom: 250px;
+    padding-bottom: 100px;
+}
+.toggleContainer {
+    transition: all;
+    margin-right: 20px;
+    float: right;
+    width: 500px;
+}
+.fade-image {
+    margin-top: 20px;
+    margin-right: 20px;
+    float: right;
+    width: 450px;
+}
